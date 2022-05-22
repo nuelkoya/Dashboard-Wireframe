@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #242424;
+    padding: 0 15px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.crypto-title{
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.crypto-price p{
+    margin: 0;
+    font-size: 1.3rem
+}
+
+#name{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.weather-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+}
+
+.weather-temp{
+    margin-top: 0;
+    align-self: center;
+    margin-left: -15px;
+    font-size: 1.4rem;
+}
+
+.weather-city{
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+}
+
+.weather-city .city{
+    margin-right: 5px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin-top: 10px;
+}
+
+
+
+.middle-section #time{
+    margin-top: 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+@media(min-width: 900px){
+    .middle-section #time{
+        margin-top: 0;
+        font-size: 5rem;
+    }
+}
